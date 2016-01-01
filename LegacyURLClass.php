@@ -6,7 +6,7 @@
  * Once executed, the class will determine if there is a existing post with a matching URL string.
  * If a post is found the class will then 301 redirect the client to the correct content. 
  *
- * @author Jorge Gonzalez
+ * @author Jorge A. Gonzalez @TheRealJAG
  * @copyright  2015 
  * @version    1.0
  */ 
