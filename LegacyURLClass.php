@@ -74,9 +74,9 @@ class ExistingContent {
     * @return
     */
       public function GetPermalink() {    
-        $url_parts = parse_url($this->url);
-        $this->urlpath = $url_parts['path'];
-        $this->permalink = substr($this->urlpath, 1, -1);  
+        $url_parts = parse_url($this->url);  // Parse the request URL
+        $this->urlpath = $url_parts['path'];  // Get the path of the request
+        $this->permalink = substr($this->urlpath, 1, -1);  // Remove the leading and trailing forward slash. WP does not use them in the permalink
       } 
        
    
@@ -101,7 +101,7 @@ class ExistingContent {
     * @return
     */
       public function Redirect() {
-        if ($this->redirect==true) {
+        if ($this->redirect==true) {  // If there is a match from wp_posts
             Header( "HTTP/1.1 301 Moved Permanently" ); 
             Header( "Location: ".$this->subdir.$this->urlpath."" ); 
             exit;
