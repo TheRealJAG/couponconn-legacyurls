@@ -32,7 +32,7 @@ class ExistingContent {
        function __construct($url) {
             $this->url = $url;
             $this->subdir = '';
-            $this->hostname = 'localhost';
+            $this->hostname = '';
             $this->database = '';
             $this->username = '';
             $this->password = '';
