@@ -17,10 +17,10 @@ class ExistingContent {
     public $redirect;
     public $urlpath;
   
-    private $hostname;          // MySQL Hostname
-    private $username;          // MySQL Username
-    private $password;          // MySQL Password
-    private $database;          // MySQL Database
+    private $hostname; 
+    private $username; 
+    private $password;
+    private $database;
     private $databaseLink;      // Database Connection Link
   
     /**
@@ -32,10 +32,10 @@ class ExistingContent {
        function __construct($url) {
             $this->url = $url;
             $this->subdir = '';
-            $this->hostname = '';
-            $this->database = '';
-            $this->username = '';
-            $this->password = '';
+            $this->hostname = '';         // MySQL Hostname
+            $this->database = '';          // MySQL Database
+            $this->username = '';         // MySQL Username
+            $this->password = '';          // MySQL Password
             $this->GetPermalink();
             $this->Connect();
             $this->Query();
