@@ -122,5 +122,5 @@ class ExistingContent {
         }      
 }
  
-$myShip = new ExistingContent($_GET['url']);
+$results = new ExistingContent($_GET['url']);
 ?>
