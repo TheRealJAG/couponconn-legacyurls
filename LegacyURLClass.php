@@ -91,7 +91,7 @@ class ExistingContent {
         $row = $result->fetch_array(MYSQLI_NUM); 
         $result->close();  
         if ($row[0]) $this->redirect = true;
-         else echo 'no match. continue on. remove this line in production';
+         else  $this->redirect = false;
       } 
   
     /**
@@ -102,10 +102,9 @@ class ExistingContent {
     */
       public function Redirect() {
         if ($this->redirect==true) {
-            echo 'redirect client to '.$this->subdir.$this->urlpath;
-            #Header( "HTTP/1.1 301 Moved Permanently" ); 
-            #Header( "Location: ".$this->subdir.$this->urlpath."" ); 
-            #exit;
+            Header( "HTTP/1.1 301 Moved Permanently" ); 
+            Header( "Location: ".$this->subdir.$this->urlpath."" ); 
+            exit;
         } 
       }   
     
