@@ -31,11 +31,11 @@ class ExistingContent {
     */
        function __construct($url) {
             $this->url = $url;
-            $this->subdir = 'http://couponconnections.com/coupons';
+            $this->subdir = '';
             $this->hostname = 'localhost';
-            $this->database = 'test';
-            $this->username = 'root';
-            $this->password = 'CouponC123';
+            $this->database = '';
+            $this->username = '';
+            $this->password = '';
             $this->GetPermalink();
             $this->Connect();
             $this->Query();
