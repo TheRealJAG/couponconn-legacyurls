@@ -18,9 +18,9 @@ class ExistingContent {
     public $urlpath;
   
     private $hostname;          // MySQL Hostname
-	private $username;          // MySQL Username
-	private $password;          // MySQL Password
-	private $database;          // MySQL Database
+    private $username;          // MySQL Username
+    private $password;          // MySQL Password
+    private $database;          // MySQL Database
     private $databaseLink;      // Database Connection Link
   
     /**
