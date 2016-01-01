@@ -123,5 +123,4 @@ class ExistingContent {
 }
  
 $myShip = new ExistingContent($_GET['url']);
-$time2 = microtime(true);
 ?>
